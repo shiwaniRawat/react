@@ -1,0 +1,82 @@
+.TopBar{
+    display: flex; 
+    width : calc(100% - 30px) ; 
+    justify-content: space-between; 
+    margin :  0 14px ; 
+    padding : 20px ; 
+    box-sizing: border-box; 
+    align-items: center;
+} 
+.TopBarItem{
+    width : 25% ; 
+    display: flex; 
+    justify-content:space-between ; 
+    cursor: pointer;
+  } 
+
+.TopBarButton{
+    padding : 12px 20px;
+    font-size : 10px ; 
+    border-radius: 15px; 
+    border  : none ; 
+    color : #CDABDC ; 
+    background-color: #FFD9D8; 
+    outline: none; 
+    cursor:  pointer; 
+    font-weight : 600 ; 
+    
+    }  
+
+.icon {
+ display: block;
+
+}  
+.TopBarspan{
+position: relative;
+margin-bottom : 2px ; 
+}
+.TopBarspan:hover {
+    font-weight : 700 ; 
+  }
+.TopBarspan:hover::after {
+    height: 5px; 
+    width : 100% ;
+  }
+  
+
+
+.TopBarspan::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: -55%;
+    width: 1px;
+    height: 0;
+    margin-right: auto;
+    margin-left: auto;
+    background-color : blue;
+    transition: 0.2s; 
+    border-radius: 60px;
+}
+
+
+.StunningLogo{
+        width : 120px ; 
+        height: 50px ;
+      } 
+
+@media(max-width : 664px){
+
+    .TopBarButton{
+        display: none;
+    }
+    .TopBarItem{
+        display: none;
+    }
+    .icon {
+        display: block;
+       
+       }
+       
+}

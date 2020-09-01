@@ -1,0 +1,22 @@
+.LandingPageWrap{
+
+    display: flex;
+    margin-top :8% ; 
+    } 
+    
+    
+    @media(max-width : 660px) {
+    
+      .LandingPageWrap{
+    
+        display: flex;
+        flex-direction:column;
+        margin-top :4% ; 
+        
+        } 
+        .Extraeffort{
+          display : none ; 
+        }
+    
+    
+    } 
